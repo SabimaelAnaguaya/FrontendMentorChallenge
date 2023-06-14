@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  
+</head>
+<body>
+
+  <main>
+    <section class="newsettler-container">
+
+      <article class="info-newsettler">
+        <h2 class="title">Stay updated!</h2>
+        <p class="content">Join 60,000+ product managers receiving monthly updates on: </p>
+        <ul class="content">
+          <li><img src="./assets/images/icon-list.svg" alt="icon check"> Product discovery and building what matters</li>
+          <li><img src="./assets/images/icon-list.svg" alt="icon check">Measuring to ensure updates are a success</li>
+          <li><img src="./assets/images/icon-list.svg" alt="icon check">And much more!</li>
+        </ul>
+        <form id="form-email">
+          <label for="input-email">Email address</label>
+          <input id="input-email" type="email" placeholder="email@company.com" autofocus>
+          <span class="msg-error">Valid email required</span>
+          <button class="btn-gen">Subscribe to monthly newsletter</button>
+        </form>
+      </article>
+      <picture class="img-newsettler"> 
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+      </picture>
+    </section>
+
+    <section class="message-container">
+      <article class="message-subscription">
+        <img src="./assets/images/icon-success.svg" alt="">
+        <h2 class="title">Thanks for subscribing!</h2>
+        <p class="content">A confirmation email has been sent to <span  id="email-target"></span>.
+          Please open it and click the button inside to confirm your subscription.</p>
+          <button class="btn-gen btn-close">Dismiss message</button>
+      </article>
+    </section>
+
+    <section class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://sabimael.com">Sabimael Añaguaya</a>.
+    </section>
+  </main>
+  
+  <script src="./main.js"></script>
+</body>
+</html>
